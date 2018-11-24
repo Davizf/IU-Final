@@ -1,14 +1,21 @@
+html{
+  background: url(images/mainBackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: fantasy;
+}
 #logo{
-  margin-left: 15%;
-  margin-top: 5%;
+  margin-left: 14%;
+  margin-top: 2%;
   float: left;
 
 }
 #logoname{
   margin-left: 2%;
-  margin-top: 4%;
+  margin-top: 1%;
   float: left;
-  font-family: fantasy;
   font-size: 25px;
   color: #FFFFFF;
 }
@@ -20,7 +27,7 @@
 
 .menu{
   float: right;
-  margin: 15px;
+  margin: 15px 10px;
 }
 
 .menu ul li{
@@ -30,7 +37,109 @@
 
 .menu ul li a{
   text-decoration: none;
-  padding: 15px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 18px;
+
   color: #FFFFFF;
+}
+#softwareStore{
+  clear: both;
+  float: right;
+  margin-top: -2%;
+
+}
+
+#searchBox{
+  clear: both;
+  width: 28%;
+  margin-left: 17%;
+  padding-top: 5%;
+}
+
+#searchBox h2{
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+#sBox{
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  background-color: #FBFBFB;
+  border-radius: 5%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#sBox input{
+  border: none;
+  background-color: #EEEEEE;
+  border-radius: 5%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding-top: 3%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#div1 input{
+  width: 100%;
+}
+#div2{
+  float: left;
+}
+#div2 input{
+  width: 130%;
+}
+#div3{
+  float: right;
+  margin-right: 10%;
+}
+#div3 input{
+  width: 130%;
+}
+
+#div4{
+  clear: both;
+  float: left;
+}
+#div4 input{
+  width: 100%;
+}
+#div5{
+  float: right;
+}
+#div5 input{
+  width: 100%;
+}
+#div6{
+  clear: both;
+}
+#div6 input{
+  width: 45%;
+}
+#div7 input{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #FFFFFF;
+  font-size: 18px;
+  background-color: #687FEA;
+  width: 100%;
+}
+
+#politicaCookies{
+  float: left;
+  margin: 10%;
+  width: 70%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#politicaCookies p{
+  padding-left: 3%;
+  font-size: 15px;
+  float: left;
+}
+#politicaCookies img{
+  padding-left: 5%;;
+  float: left;
 }

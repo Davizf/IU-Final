@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body background = "images/mainBackground.jpg">
+  <body>
 
     <div id ="main">
       <div id="logo">
@@ -26,6 +26,60 @@
             <li><a href = "#">Iniciar Seccion</a></li>
           </ul>
         </nav>
+      </div>
+
+
+      <div id="softwareStore">
+        <img src = "images/googlePlay.jpg" width="120px" height="40px">
+        <img src = "images/appleStore.jpg" width="120px" height="40px">
+      </div>
+
+      <div id = "searchBox">
+        <h2>Busca hoteles y experiencias fantasticas</h2>
+        <div id = "sBox">
+          <form onsubmit="searchForm(); return false">
+            <div id="div1">
+              <label>Lugar</label>
+              <br/>
+              <input type="text" value="" required>
+            </div>
+
+            <div id="div2">
+              <label>Fecha de llegada</label>
+              <br/>
+              <input type="date" value="" required>
+            </div>
+            <div id="div3">
+              <label>Fecha de partida</label>
+              <br/>
+              <input type="date" value="" required>
+            </div>
+            <div id="div4">
+              <label>Numero de habitaciones</label>
+              <br/>
+              <input type="number" value="" required>
+            </div>
+            <div id="div5">
+              <label>Numero de huespedes</label>
+              <br/>
+              <input type="number" value="" required>
+            </div>
+            <div id="div6">
+                <label>Palabras clave</label>
+                <br/>
+                <input type ="text" value="" required>
+            </div>
+            <div id="div7">
+                <input type ="submit" value="Buscar">
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+      <div id = "politicaCookies">
+        <p>Nuestra web usa cookies con fines tecnicos, analiticos y de marketing. Si estas de acuerdo, continua con tu busqueda</p>
+        <img src = "images/Acepto.jpg" width="150px" height="50px">
       </div>
 
 
