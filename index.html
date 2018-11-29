@@ -38,38 +38,54 @@
         <h2>Busca hoteles y experiencias fantasticas</h2>
         <div id = "sBox">
           <form onsubmit="searchForm(); return false">
+            <label>Lugar</label>
             <div id="div1">
-              <label>Lugar</label>
+              <input type="text" value="" required>
+            </div>
+
+
+
+
+
+
+            <div class="left">
+              <label>Fecha de llegada</label>
+            </div>
+            <div class="right">
+              <label>Fecha de partida</label>
+            </div>
+            <div class="left">
+              <input type="text" value="" required>
+            </div>
+            <div class="right">
+              <input type="text" value="" required>
+            </div>
+
+            <div class="left">
+              <label>Numero de habitaciones</label>
+            </div>
+            <div class="right">
+              <label>Numero de huespedes</label>
+            </div>
+            <div class="left">
+              <input type="text" value="" required>
+            </div>
+            <div class="right">
+              <input type="text" value="" required>
+            </div>
+
+
+
+
+
+            <div id="div4">
+              <label>Palabras clave</label>
               <br/>
               <input type="text" value="" required>
             </div>
 
-            <div id="div2">
-              <label>Fecha de llegada</label>
-              <br/>
-              <input type="date" value="" required>
-            </div>
-            <div id="div3">
-              <label>Fecha de partida</label>
-              <br/>
-              <input type="date" value="" required>
-            </div>
-            <div id="div4">
-              <label>Numero de habitaciones</label>
-              <br/>
-              <input type="number" value="" required>
-            </div>
-            <div id="div5">
-              <label>Numero de huespedes</label>
-              <br/>
-              <input type="number" value="" required>
-            </div>
-            <div id="div6">
-                <label>Palabras clave</label>
-                <br/>
-                <input type ="text" value="" required>
-            </div>
-            <div id="div7">
+
+            <div id="Submit">
                 <input type ="submit" value="Buscar">
             </div>
           </form>

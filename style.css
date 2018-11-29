@@ -84,40 +84,34 @@ html{
 #div1 input{
   width: 100%;
 }
-#div2{
+
+.left label{
   float: left;
-}
-#div2 input{
-  width: 130%;
-}
-#div3{
-  float: right;
-  margin-right: 10%;
-}
-#div3 input{
-  width: 130%;
+  width: 48%;
 }
 
-#div4{
-  clear: both;
+.right label{
+  float: right;
+  width: 48%;
+}
+
+.left input{
   float: left;
+  width: 48%;
+}
+
+.right input{
+  float: right;
+  width: 48%;
+}
+
+#div4 {
+  clear: both;
 }
 #div4 input{
-  width: 100%;
+  width: 50%;
 }
-#div5{
-  float: right;
-}
-#div5 input{
-  width: 100%;
-}
-#div6{
-  clear: both;
-}
-#div6 input{
-  width: 45%;
-}
-#div7 input{
+#Submit input{
   padding-top: 2%;
   padding-bottom: 2%;
   color: #FFFFFF;
@@ -129,7 +123,7 @@ html{
 #politicaCookies{
   float: left;
   margin: 10%;
-  width: 70%;
+  width: 60%;
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
