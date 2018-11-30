@@ -1,10 +1,13 @@
-html{
+#html{
+  font-family:  Arial;
+}
+
+#main{
   background: url(images/mainBackground.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family:  Arial;
 }
 #logo{
   margin-left: 14%;
@@ -136,4 +139,96 @@ html{
 #politicaCookies img{
   padding-left: 5%;;
   float: left;
+}
+
+#main{
+  display: none;
+}
+/***************************************** End main*******************************************************************/
+#searchHotels{
+  width: 70%;
+  margin-left: 15%;
+}
+
+#logoBlue{
+  margin-left: 2%;
+  margin-top: 1%;
+  float: left;
+}
+#logonameBlue{
+  margin-left: 2%;
+  margin-top: 0%;
+  float: left;
+  font-size: 25px;
+  color: #6780D2;
+}
+
+#menuMainBlue img{
+  margin: 20px;
+  float: right;
+}
+.menuBlue{
+  float: right;
+  margin: 15px 10px;
+}
+
+.menuBlue ul li{
+  list-style: none;
+  float: left;
+}
+
+.menuBlue ul li a{
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  color: #6780D2;
+}
+
+
+
+#search{
+  clear: both;
+  float: left;
+  margin-right: 5%;
+}
+#search button {
+  margin-top: 35px;
+  margin-left: 40px;
+  background: #FFFFFF;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  color: #646464;
+}
+
+
+.keyword{
+  margin: 2%;
+  height: 40px;
+  float: left;
+  background-color: #EEEEEE;
+  border-spacing: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 5%;
+}
+.keyword p{
+  padding-left: 10px;
+  float: left;
+}
+.keyword button{
+  margin: 15px;
+  float: right;
+  background-color: #EEEEEE;
+  border: none;
+  font-size: 20px;
+}
+
+
+#separated{
+  clear: both;
+  border:none;
+  height: 50px;
+  border-bottom: 1px solid #CCC;
+  box-shadow: 0 20px 20px -20px #CCC;
+  border-radius: 10px;
 }
