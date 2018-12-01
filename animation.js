@@ -2,8 +2,9 @@ function acceptCookies(){
     document.getElementById("politicaCookies").style.display="none";
 };
 function hoteles(){
+    document.getElementById("optionSummer").style.display="none";
     document.getElementById("main").style.display="none";
-        document.getElementById("subMain").style.display="block";
+    document.getElementById("subMain").style.display="block";
     document.getElementById("submainBar").style.display="block";
     document.getElementById("searchBar").style.display="block";
     document.getElementById("byKeywords").style.display="none";
@@ -13,7 +14,10 @@ function hoteles(){
     document.getElementById("infoExperiences").style.display="none";
     document.getElementById("añadirLista1").style.display="none";
     document.getElementById("añadirLista2").style.display="none";
-      document.getElementById("keyTitleExperience").style.display="none";
+    document.getElementById("keyTitleExperience").style.display="none";
+    document.getElementById("gallery").style.display="none";
+    document.getElementById("writeOpinionBox").style.display="none";
+    document.getElementById("detailInfoHotelsBox").style.display="none";
 };
 function addList1(){
   document.getElementById("añadirLista2").style.display="none";
@@ -25,8 +29,9 @@ function addList2(){
   document.getElementById("añadirLista2").style.display="block";
 };
 function experiences(){
+  document.getElementById("optionSummer").style.display="none";
   document.getElementById("main").style.display="none";
-    document.getElementById("subMain").style.display="block";
+  document.getElementById("subMain").style.display="block";
   document.getElementById("submainBar").style.display="block";
   document.getElementById("searchBar").style.display="block";
   document.getElementById("byKeywords").style.display="none";
@@ -36,7 +41,10 @@ function experiences(){
   document.getElementById("infoHotels").style.display="none";
   document.getElementById("añadirLista1").style.display="none";
   document.getElementById("añadirLista2").style.display="none";
-    document.getElementById("keyTitleHotel").style.display="none";
+  document.getElementById("keyTitleHotel").style.display="none";
+  document.getElementById("gallery").style.display="none";
+  document.getElementById("writeOpinionBox").style.display="none";
+  document.getElementById("detailInfoHotelsBox").style.display="none";
 }
 
 function searchForm(){
@@ -45,6 +53,7 @@ function searchForm(){
   var llegada = document.getElementById("llegada");
   var personas = document.getElementById("personas");
   document.getElementById("main").style.display="none";
+  document.getElementById("subMain").style.display="block";
   document.getElementById("submainBar").style.display="block";
   document.getElementById("searchBar").style.display="block";
   document.getElementById("separated").style.display="block";
@@ -64,6 +73,9 @@ function backMain(){
 };
 
 function hotelViaCastellana(){
+  document.getElementById("optionSummer").style.display="none";
+  document.getElementById("añadirLista1").style.display="none";
+  document.getElementById("añadirLista2").style.display="none";
   document.getElementById("infoHotels").style.display="none";
   document.getElementById("infoExperiences").style.display="none";
   document.getElementById("gallery").style.display="block";
@@ -78,6 +90,9 @@ function hotelViaCastellana(){
 };
 
 function hotelNH(){
+  document.getElementById("optionSummer").style.display="none";
+  document.getElementById("añadirLista1").style.display="none";
+  document.getElementById("añadirLista2").style.display="none";
   document.getElementById("infoHotels").style.display="none";
   document.getElementById("infoExperiences").style.display="none";
   document.getElementById("gallery").style.display="block";
@@ -92,6 +107,9 @@ function hotelNH(){
 };
 
 function Tour(){
+  document.getElementById("optionSummer").style.display="none";
+  document.getElementById("añadirLista1").style.display="none";
+  document.getElementById("añadirLista2").style.display="none";
   document.getElementById("infoHotels").style.display="none";
   document.getElementById("infoExperiences").style.display="none";
   document.getElementById("gallery").style.display="block";
@@ -105,6 +123,9 @@ function Tour(){
   + "zona en la que conoceras los rincones mas asombrosos de la ciudad.";
 };
 function Bucea(){
+  document.getElementById("optionSummer").style.display="none";
+  document.getElementById("añadirLista1").style.display="none";
+  document.getElementById("añadirLista2").style.display="none";
   document.getElementById("infoHotels").style.display="none";
   document.getElementById("infoExperiences").style.display="none";
   document.getElementById("gallery").style.display="block";
@@ -118,6 +139,9 @@ function Bucea(){
   + "que podras ver muchas especies de peces distintas y conocer un poco la vida marina de la zona.";
 };
 function Hideout(){
+  document.getElementById("optionSummer").style.display="none";
+  document.getElementById("añadirLista1").style.display="none";
+  document.getElementById("añadirLista2").style.display="none";
   document.getElementById("infoHotels").style.display="none";
   document.getElementById("infoExperiences").style.display="none";
   document.getElementById("gallery").style.display="block";
@@ -130,6 +154,9 @@ function Hideout(){
   document.getElementById("var6").innerHTML = "Ahora mismo no tenemos opiniones para este evento.<br/>Se el primero en opinar!";
 };
 function Villa(){
+  document.getElementById("optionSummer").style.display="none";
+  document.getElementById("añadirLista1").style.display="none";
+  document.getElementById("añadirLista2").style.display="none";
   document.getElementById("infoHotels").style.display="none";
   document.getElementById("infoExperiences").style.display="none";
   document.getElementById("gallery").style.display="block";
@@ -144,5 +171,11 @@ function Villa(){
 
 function addOpinion(){
     document.getElementById("gallery").style.display="none";
-      document.getElementById("writeOpinionBox").style.display="block";
+    document.getElementById("writeOpinionBox").style.display="block";
 };
+
+function moreResult(){
+  document.getElementById("optionSummer").style.display="block";
+  document.getElementById("infoHotels").style.display="none";
+  document.getElementById("infoExperiences").style.display="none";
+}
