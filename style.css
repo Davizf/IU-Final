@@ -4,6 +4,7 @@
 
 #main{
   background: url(images/mainBackground.jpg) no-repeat center center fixed;
+  height: 1120px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,7 +50,7 @@
   clear: both;
   float: right;
   margin-top: -2%;
-
+  margin-right: 1%;
 }
 
 #searchBox{
@@ -144,14 +145,11 @@
 #main{
   display: none;
 }
-/***************************************** End main*******************************************************************/
-#searchHotels{
-  width: 70%;
-  margin-left: 15%;
-}
+
+/***************************************** End main*****************************************************************/
 
 #logoBlue{
-  margin-left: 2%;
+  margin-left: 4%;
   margin-top: 1%;
   float: left;
 }
@@ -189,13 +187,13 @@
 #search{
   clear: both;
   float: left;
-  margin-right: 5%;
+  margin-right: 2%;
 }
 #search button {
   margin-top: 35px;
-  margin-left: 40px;
+  margin-left: 50px;
   background: #FFFFFF;
-  font-size: 25px;
+  font-size: 30px;
   border: none;
   cursor: pointer;
   color: #646464;
@@ -223,12 +221,352 @@
   font-size: 20px;
 }
 
+.keytitle{
+  float: left;
+  margin: 20px;
+  color: #6780D2;
+  display: none;
+}
+
 
 #separated{
   clear: both;
   border:none;
-  height: 50px;
+  /*height: 50px;*/
   border-bottom: 1px solid #CCC;
   box-shadow: 0 20px 20px -20px #CCC;
   border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#hotelViaCastellana{
+  border-radius: 10px;
+  background-image: url("images/hotelViaCastellana.jpg");
+  width: 95%;
+  margin-left: 2.5%;
+  height: 175px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.letter{
+  padding: 5px;
+  margin-left: 25px;
+}
+
+
+.keywordIMG p{
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  margin-left: 25px;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+}
+
+.description{
+  margin-top: 10px;
+  margin-left: 75px;
+}
+
+.description p{
+  float: left;
+  width: 50%;
+}
+.description button{
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 40px;
+  color:  #6780D2;
+  float: right;
+  margin: 20px;
+}
+.description img{
+  width: 25px;
+  float: right;
+  margin: 30px;
+}
+.description h4{
+  margin-right: 50px;
+  color: #FFFFFF;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color:  #7392F7;
+  float: right;
+}
+
+
+#HotelNH{
+  clear: both;
+  border-radius: 10px;
+  background-image: url("images/hotelNH.jpg");
+  width: 95%;
+  margin-left: 2.5%;
+  height: 175px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.MasInformacion h4{
+  clear: both;
+  color: #FFFFFF;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color:  #7392F7;
+  width: 7%;
+  margin-left: 43%;
+}
+
+.añadirListe{
+  width: 250px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding-top: 1px;
+  padding-left: 20px;
+  padding-bottom: 1px;
+  border-radius: 10px;
+}
+
+#infoHotels{
+  display: none;
+}
+/********************************* End inforHotels*******************************************/
+
+#Tour{
+  border-radius: 10px;
+  background-image: url("images/Tour.jpg");
+  width: 95%;
+  margin-left: 2.5%;
+  height: 175px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFFFFF;
+}
+
+
+#Bucea{
+  clear: both;
+  border-radius: 10px;
+  background-image: url("images/Bucea.jpg");
+  width: 95%;
+  margin-left: 2.5%;
+  height: 175px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFFFFF;
+}
+
+#infoExperiences{
+  display: none;
+}
+
+/********************************* End inforExperiences *******************************************/
+
+#hotelViaCastellana{
+  border-radius: 10px;
+  background-image: url("images/hotelViaCastellana.jpg");
+  width: 95%;
+  margin-left: 2.5%;
+  height: 175px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+#Hideout{
+  clear: both;
+  border-radius: 10px;
+  background-image: url("images/hideout.PNG");
+  width: 95%;
+  margin-left: 2.5%;
+  height: 175px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+#Villa{
+    clear: both;
+  border-radius: 10px;
+  background-image: url("images/villa.PNG");
+  width: 95%;
+  margin-left: 2.5%;
+  height: 175px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.seeMoreInfo{
+  color: #FFFFFF;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  background-color:  #7392F7;
+  width: 10%;
+  float: right;
+  margin-right: 30px;
+  margin-top: -45px;
+}
+
+#optionSummer{
+  display: none;
+}
+/********************************* End optionSummer *******************************************/
+#writeOpinionBox{
+  float: left;
+  width: 25%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 10px;
+  margin-left: 3%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 610px;
+}
+
+#writeOpinionBox input{
+  border: none;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding-top: 3%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.normalInput input{
+  width: 100%;
+  font-size: 20px;
+}
+#commitsInput input{
+  width: 100%;
+  height: 250px;;
+}
+#submitCommits input{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #FFFFFF;
+  font-size: 18px;
+  background-color: #7392F7;;
+  width: 100%;
+}
+
+#detailInfoHotelsBox{
+  width: 64%;
+  float: right;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 10px;
+  margin-right: 3%;
+  height: 650px;
+}
+
+#detailInfoHotelsBox h2{
+  padding: 30px;
+  float: left;
+}
+
+#detailInfoHotelsBox button{
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 40px;
+  color:  #6780D2;
+  float: left;
+  margin: 40px;
+  margin-left: -10px;
+}
+#share{
+  width: 25px;
+  float: left;
+  margin: 50px;
+    margin-left: -12px;
+}
+.keywordRight p{
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  margin-top: 45px;
+  margin-right: 20px;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+}
+
+.text{
+  clear: both;
+  margin-left: 30px;
+}
+
+.commits{
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+.commits img{
+  float: left;
+}
+.commits h4{
+  float: left;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+.commits p{
+  width: 40%;
+  float: left;
+  margin-left: -123px;
+}
+#correct{
+  margin-left: -95px;
+}
+.buttonBlue p{
+  clear: both;
+  color: #FFFFFF;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color:  #7392F7;
+  width: 10%;
+  margin-left: 38%;
+}
+
+#map{
+  margin-left: 5%;
 }
