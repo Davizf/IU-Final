@@ -62,6 +62,8 @@ function searchForm(){
   document.getElementById("añadirLista1").style.display="none";
   document.getElementById("añadirLista2").style.display="none";
   document.getElementById("byKeywords").style.display="block";
+  document.getElementById("keyTitleHotel").style.display="none";
+  document.getElementById("keyTitleExperience").style.display="none";
   document.getElementById("place").innerHTML = "En " + lugar.value.bold();
   document.getElementById("date").innerHTML = "Desde el " + partida.value.bold() + " hasta el " + llegada.value.bold();
   document.getElementById("person").innerHTML = "Para " + personas.value.bold() + " personas";
