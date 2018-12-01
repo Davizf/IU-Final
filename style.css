@@ -71,14 +71,14 @@
   padding-right: 5%;
   padding-bottom: 5%;
   background-color: #FBFBFB;
-  border-radius: 5%;
+  border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 #sBox input{
   border: none;
   background-color: #EEEEEE;
-  border-radius: 5%;
+  border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   padding-top: 3%;
   margin-top: 10px;
@@ -142,9 +142,6 @@
   float: left;
 }
 
-#main{
-  display: none;
-}
 
 /***************************************** End main*****************************************************************/
 
@@ -207,7 +204,7 @@
   background-color: #EEEEEE;
   border-spacing: 15px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  border-radius: 5%;
+  border-radius: 5px;
 }
 .keyword p{
   padding-left: 10px;
@@ -221,7 +218,14 @@
   font-size: 20px;
 }
 
-.keytitle{
+#keyTitleHotel{
+  float: left;
+  margin: 20px;
+  color: #6780D2;
+  display: none;
+}
+
+#keyTitleExperience{
   float: left;
   margin: 20px;
   color: #6780D2;
@@ -332,13 +336,32 @@
   margin-left: 43%;
 }
 
-.añadirListe{
+#añadirLista1{
   width: 250px;
+  position: absolute;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   padding-top: 1px;
   padding-left: 20px;
   padding-bottom: 1px;
   border-radius: 10px;
+  margin-left: 80%;
+  margin-top: -23%;
+  background-color: #FFFFFF;
+  display: none;
+}
+
+#añadirLista2{
+  width: 250px;
+  position: absolute;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding-top: 1px;
+  padding-left: 20px;
+  padding-bottom: 1px;
+  border-radius: 10px;
+  margin-left: 80%;
+  margin-top: -9%;
+  background-color: #FFFFFF;
+  display: none;
 }
 
 #infoHotels{
@@ -441,6 +464,8 @@
 #optionSummer{
   display: none;
 }
+
+
 /********************************* End optionSummer *******************************************/
 #writeOpinionBox{
   float: left;
@@ -531,28 +556,62 @@
   clear: both;
   margin-left: 30px;
 }
+#price{
+  float: left;
+}
+#reservar{
+  color: #FFFFFF;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  background-color:  #7392F7;
+  width: 50px;;
+  float: left;
+  margin-left: 5%;
+  margin-top: 10px;
+}
 
-.commits{
+#commits1{
+  clear: both;
   width: 40%;
   float: left;
   margin-left: 5%;
   margin-bottom: 20px;
 }
-.commits img{
+#commits1 img{
   float: left;
 }
-.commits h4{
+#commits1 h4{
   float: left;
   margin-left: 20px;
   margin-top: -10px;
 }
-.commits p{
-  width: 40%;
+#commits1 p{
+  width: 70%;
   float: left;
   margin-left: -123px;
 }
-#correct{
-  margin-left: -95px;
+
+#commits2{
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+#commits2 img{
+  float: left;
+}
+#commits2 h4{
+  float: left;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+#commits2 p{
+  width: 70%;
+  float: left;
+  margin-left: -94px;
 }
 .buttonBlue p{
   clear: both;
@@ -569,4 +628,113 @@
 
 #map{
   margin-left: 5%;
+}
+
+#writeOpinionBox{
+  display: none;
+}
+
+/*********************************** gallery *******************/
+#gallery{
+  float: left;
+  width: 25%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 10px;
+  margin-left: 3%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 610px;
+}
+
+
+
+
+.pic_container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.pic_container .pic_box {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    overflow: hidden;
+}
+.pic_container .pic_box .size_pic {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.pic_container .pic_box li {
+    display: inline-block;
+}
+.pic_container .btnl {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+	background-image: url(images/btn_l_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.pic_container .btnr {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+	background-image: url(images/btn_r_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.pic_container .dots span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: #bebebd;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+.pic_container .dots {
+    position: absolute;
+    font-size: 0;
+}
+.pic_container .dots .dot_now {
+    background: #ff4200;
+}
+.pic_container .deep {
+    background-color: #333;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+/*************************** End gallery ****************************************/
+
+#gallery{
+  margin-bottom: 20px;
+  display: none;
+}
+#detailInfoHotelsBox{
+  display: none;
+}
+#submainBar{
+  display: none;
+}
+#searchBar{
+  display: none;
+}
+#separated{
+  display: none;
 }

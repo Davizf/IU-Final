@@ -5,6 +5,36 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="animation.js"></script>
+    <script type="text/javascript" src="sslide.js"></script>
+    <script type="text/javascript">
+    		$(document).ready(function(){
+
+    			//设置config, 必需的参数为lbId, 其他参数可选, ./js/sslide.js文件最前面有config参数详细说明.
+    			//如果没有传入图片路径数组，会默认读取./css/images目录下的slb1.png 到 slb5.png 的5张图片,
+    			//最简单的添加轮播的方式是直接覆盖这几张图片。
+
+    			var info1 = {
+    				"lbId": "myslide_1",
+    				"picWidth": 480,
+    				"picHeight": 610,
+    				//"interTime": 2500,
+    				//"switchBtnShow": false,
+    				//"switchDotShow": false
+    				//"autoSlide": false,
+    				//"pause": false,
+    				//"loop": false,
+    				//"picNum": 5,
+    				"picPath": ["images/slb1.png","images/slb2.png","images/slb3.png","images/slb4.png"]
+    			};
+
+
+
+    			SSlide(info1);
+
+    		});
+    	</script>
   </head>
   <body>
 
@@ -21,8 +51,8 @@
         <img src = "images/register.png">
         <nav class="menu">
           <ul>
-            <li><a href = "#">Hoteles</a></li>
-            <li><a href = "#">Experiencias</a></li>
+            <li onclick="hoteles()"><a href = "#">Hoteles</a></li>
+            <li onclick="experiences()"><a href = "#">Experiencias</a></li>
             <li><a href = "#">Ayuda</a></li>
             <li><a href = "#">Iniciar Seccion</a></li>
           </ul>
@@ -41,20 +71,20 @@
           <form onsubmit="searchForm(); return false">
             <label>Lugar</label>
             <div id="div1">
-              <input type="text" value="" required>
+              <input type="text" value="" id="lugar"required>
             </div>
 
             <div class="left">
-              <label>Fecha de llegada</label>
-            </div>
-            <div class="right">
               <label>Fecha de partida</label>
             </div>
+            <div class="right">
+              <label>Fecha de llegada</label>
+            </div>
             <div class="left">
-              <input type="text" value="" required>
+              <input type="text" value="" id = "partida" required>
             </div>
             <div class="right">
-              <input type="text" value="" required>
+              <input type="text" value="" id="llegada" required>
             </div>
 
             <div class="left">
@@ -67,7 +97,7 @@
               <input type="text" value="" required>
             </div>
             <div class="right">
-              <input type="text" value="" required>
+              <input type="text" value="" id="personas" required>
             </div>
 
             <div id="div4">
@@ -87,7 +117,7 @@
 
       <div id = "politicaCookies">
         <p>Nuestra web usa cookies con fines tecnicos, analiticos y de marketing. Si estas de acuerdo, continua con tu busqueda</p>
-        <img src = "images/Acepto.jpg" width="150px" height="50px">
+        <img onclick="acceptCookies()" src = "images/Acepto.jpg" width="150px" height="50px" >
       </div>
 
 
@@ -99,12 +129,12 @@
 
     <div id ="subMain">
 
-      <div id ="mainBar">
-        <div id="logoBlue">
+      <div id ="submainBar">
+        <div onclick="backMain()" id="logoBlue">
           <img src = "images/blueLogo.png"  width="70px" height="70px" >
         </div>
         <div id="logonameBlue">
-          <h2>DISCOVER</h2>
+          <h2 onclick="backMain()">DISCOVER</h2>
         </div>
 
 
@@ -112,8 +142,8 @@
           <img src = "images/natalieDormer.jpg" width="40px" height="40px">
           <nav class="menuBlue">
             <ul>
-              <li><a href = "#">Hoteles</a></li>
-              <li><a href = "#">Experiencias</a></li>
+              <li onclick="hoteles()"><a href = "#">Hoteles</a></li>
+              <li onclick="experiences()"><a href = "#">Experiencias</a></li>
               <li><a href = "#">Ayuda</a></li>
               <li><a href = "#">Iniciar Seccion</a></li>
             </ul>
@@ -127,33 +157,36 @@
         <div id="search">
           <button type="submit"><i class="fa fa-search"></i></button>
         </div>
+        <div id="byKeywords">
+          <div class="keyword">
+            <p id="place">En <b>Madrid</b></p>
+            <button onclick="">x</button>
+          </div>
+          <div class="keyword">
+            <p id="date">Desde el <b>26/11/2018</b> hasta el<b> 29/11/2018</b></p>
+            <button onclick="">x</button>
+          </div>
+          <div class="keyword">
+            <p id="person">Para 2 personas</p>
+            <button onclick="">x</button>
+          </div>
+        </div>
 
-        <div class="keyword">
-          <p>En <b>Madrid</b></p>
-          <button onclick="">x</button>
-        </div>
-        <div class="keyword">
-          <p>Desde el <b>26/11/2018</b> hasta el<b> 29/11/2018</b></p>
-          <button onclick="">x</button>
-        </div>
-        <div class="keyword">
-          <p>Para 2 personas</p>
-          <button onclick="">x</button>
-        </div>
-
-      <div class="keytitle">
+      <div id="keyTitleHotel">
         <h2>Hoteles mas buscados</h2>
       </div>
+
+      <div id="keyTitleExperience">
+        <h2>Experiencias mas reservadas</h2>
       </div>
+
+    </div>
 
 
       <hr id="separated">
 
 
-      <div id="infoHotels">
-
-
-
+    <div id="infoHotels">
       <div id="hotelViaCastellana">
         <div class="letter">
           <h3>Hotel Via Castellana</h3>
@@ -175,9 +208,9 @@
            junto a las emblematicas torres Kio.
         </p>
 
-        <h4>Mas Informacion</h4>
+        <h4 onclick="hotelViaCastellana()">Mas Informacion</h4>
         <img src="images/share.jpg">
-        <button>+</button>
+        <button onclick="addList1()">+</button>
       </div>
 
 
@@ -204,9 +237,9 @@
           metro de la esracion de metro Avenida de America.
         </p>
 
-        <h4>Mas Informacion</h4>
+        <h4 onclick="hotelNH()">Mas Informacion</h4>
         <img src="images/share.jpg">
-        <button>+</button>
+        <button onclick="addList2()">+</button>
       </div>
 
 
@@ -216,17 +249,7 @@
         <h4>Mas Resultados</h4>
       </div>
 
-      <div class="añadirListe">
-        <p>Lista de Favoritos</p>
-        <p>Lista colaborativa existente</p>
-        <p>Nueva lista Colaborativa</p>
-      </div>
 
-      <div class="añadirListe">
-        <p>Lista de Favoritos</p>
-        <p>Lista colaborativa existente</p>
-        <p>Nueva lista Colaborativa</p>
-      </div>
 
     </div>  <!-- end infoHotels -->
 
@@ -234,70 +257,81 @@
 
     <div id="infoExperiences">
 
-
-
-    <div id="Tour">
-      <div class="letter">
-        <h3>Tour guiado por Madrid</h3>
-        <p>Madrid</p>
+      <div id="Tour">
+        <div class="letter">
+          <h3>Tour guiado por Madrid</h3>
+          <p>Madrid</p>
+        </div>
+        <div class="keywordIMG">
+          <p>Guiado</p>
+        </div>
+        <div class="keywordIMG">
+          <p>Madrid Centro</p>
+        </div>
+        <div class="keywordIMG">
+          <p>Recomendado</p>
+        </div>
       </div>
-      <div class="keywordIMG">
-        <p>Guiado</p>
+      <div class="description">
+        <p>
+          Disfruta de todos los rincones de Madrid centro en una visita guiada por toda la
+          zona en la que conoceras los rincones mas asombrosos de la ciudad.
+        </p>
+
+        <h4 onclick="Tour()">Mas Informacion</h4>
+        <img src="images/share.jpg">
+        <button onclick="addList1()">+</button>
       </div>
-      <div class="keywordIMG">
-        <p>Madrid Centro</p>
+
+
+
+
+      <div id="Bucea">
+        <div class="letter">
+          <h3>Bucea entre peces</h3>
+          <p>Guardamar, Alicante</p>
+        </div>
+        <div class="keywordIMG">
+      <p>Buceo</p>
+        </div>
+        <div class="keywordIMG">
+          <p>Acuatica</p>
+        </div>
+        <div class="keywordIMG">
+              <p>Mar</p>
+        </div>
       </div>
-      <div class="keywordIMG">
-        <p>Recomendado</p>
+      <div class="description">
+        <p>
+          Disfruta de una experiencia distinta buceando entre peces por las playas de Guardamar en la
+          que podras ver muchas especies de peces distintas y conocer un poco la vida marina de la zona.
+        </p>
+
+        <h4 onclick="Bucea()">Mas Informacion</h4>
+        <img src="images/share.jpg">
+        <button onclick="addList2()">+</button>
       </div>
-    </div>
-    <div class="description">
-      <p>
-        Disfruta de todos los rincones de Madrid centro en una visita guiada por toda la
-        zona en la que conoceras los rincones mas asombrosos de la ciudad.
-      </p>
-
-      <h4>Mas Informacion</h4>
-      <img src="images/share.jpg">
-      <button>+</button>
-    </div>
 
 
-
-
-    <div id="Bucea">
-      <div class="letter">
-        <h3>Bucea entre peces</h3>
-        <p>Guardamar, Alicante</p>
+      <div class="MasInformacion">
+        <h4>Mas Resultados</h4>
       </div>
-      <div class="keywordIMG">
-    <p>Buceo</p>
-      </div>
-      <div class="keywordIMG">
-        <p>Acuatica</p>
-      </div>
-      <div class="keywordIMG">
-            <p>Mar</p>
-      </div>
-    </div>
-    <div class="description">
-      <p>
-        Disfruta de una experiencia distinta buceando entre peces por las playas de Guardamar en la
-        que podras ver muchas especies de peces distintas y conocer un poco la vida marina de la zona.
-      </p>
-
-      <h4>Mas Informacion</h4>
-      <img src="images/share.jpg">
-      <button>+</button>
-    </div>
 
 
-    <div class="MasInformacion">
-      <h4>Mas Resultados</h4>
-    </div>
 
   </div>  <!-- End infoExperiences -->
 
+      <div id="añadirLista1">
+        <p>Lista de Favoritos</p>
+        <p>Lista colaborativa existente</p>
+        <p>Nueva lista Colaborativa</p>
+      </div>
+
+      <div id="añadirLista2">
+        <p>Lista de Favoritos</p>
+        <p>Lista colaborativa existente</p>
+        <p>Nueva lista Colaborativa</p>
+      </div>
 
 
       <div id="optionSummer">
@@ -317,7 +351,7 @@
           <div class="keywordIMG">
             <p>Recomendado</p>
           </div>
-            <h4 class="seeMoreInfo">Ver mas informacion</h4>
+            <h4 onclick="hotelViaCastellana()" class="seeMoreInfo">Ver mas informacion</h4>
         </div>
 
 
@@ -338,7 +372,7 @@
         <div class="keywordIMG">
               <p>Ecologico</p>
         </div>
-          <h4 class="seeMoreInfo">Ver mas informacion</h4>
+          <h4 onclick="Hideout()" class="seeMoreInfo">Ver mas informacion</h4>
       </div>
 
 
@@ -356,7 +390,7 @@
         <div class="keywordIMG">
               <p>Alternativo</p>
         </div>
-          <h4 class="seeMoreInfo">Ver mas informacion</h4>
+          <h4 onclick="Villa()" class="seeMoreInfo">Ver mas informacion</h4>
       </div>
 
     </div>  <!-- End optionSummer -->
@@ -393,47 +427,62 @@
     </div>
 
 
+    <div id="gallery">
+      <!--轮播代码块开始-->
+      <div id="myslide_1" class="pic_container">
+            <ul class="pic_box size_box">
+        </ul>
+          <span class="btnl btns"></span> <span class="btnr btns"></span>
+          <div class="dots"></div>
+      </div>
+    <!--轮播代码块结束-->
+    </div>
+
+
+
+
       <div id="detailInfoHotelsBox">
-          <h2>Hotel Via Castellana</h2>
+          <h2 id="var1">Hotel Via Castellana</h2>
           <button>+</button>
           <img src="images/share.jpg" id="share">
           <div class="keywordRight">
-            <p>Lujoso</p>
+            <p id="var2">Lujoso</p>
           </div>
           <div class="keywordRight">
-            <p>Madrid Centro</p>
+            <p id="var3">Madrid Centro</p>
           </div>
           <div class="keywordRight">
-            <p>Recomendado</p>
+            <p id="var4">Recomendado</p>
           </div>
           <div class="text">
-            <p>Charmartion, Madrid</p>
-            <p>
-              El Hotel Via Castellana esta en la zona financiera de Chamartion, en el Paseo de la Castellana de Madrid,
+            <p id="var5">Charmartin, Madrid</p>
+            <p id="var6">
+              El Hotel Via Castellana esta en la zona financiera de Chamartin, en el Paseo de la Castellana de Madrid,
                junto a las emblematicas torres Kio.
             </p>
             <h3>Precio</h3>
-            <p>240 € en total</p>
+            <p id="price">240 € en total</p>
+            <p id="reservar">Reservar<p>
           </div>
 
 
 
 
 
-          <div class="commits">
+          <div id="commits1">
             <img src="images/natalieDormer.jpg" width="70px" height="70px">
             <h4>Natalie Dormer</h4>
             <p>Estancia perfecto en el hotel, muy recomendado si vistas Madrid</p>
           </div>
 
-          <div class="commits">
+          <div id="commits2">
             <img src="images/ramiMalek.jpg" width="70px" height="70px">
             <h4>Rami Malek</h4>
-            <p id="correct">Mi hotel favorito de todo Madrid, muy silencioso para trabajar</p>
+            <p>Mi hotel favorito de todo Madrid, muy silencioso para trabajar</p>
           </div>
 
           <div class="buttonBlue">
-            <p>Añadir Opinion</p>
+            <p onclick="addOpinion()">Añadir Opinion</p>
           </div>
 
           <div id="map">
