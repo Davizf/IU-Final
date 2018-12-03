@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>DISCOVER</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,13 +49,15 @@
 
 
       <div id="menuMain">
-        <img src = "images/register.png">
+        <img src = "images/register.png" onclick="registerPage()" id="registerICON">
+        <img src = "images/natalieDormerBlue.jpg" width="70px" height="70px" onclick="profile()" id="userICONBLUE">
         <nav class="menu">
           <ul>
             <li onclick="hoteles()"><a href = "#">Hoteles</a></li>
             <li onclick="experiences()"><a href = "#">Experiencias</a></li>
-            <li><a href = "#">Ayuda</a></li>
-            <li><a href = "#">Iniciar Seccion</a></li>
+            <li onclick="help()"><a href = "#">Ayuda</a></li>
+            <li onclick="loginPage()" id="changeLog1"><a href = "#">Iniciar Seccion</a></li>
+            <li onclick="profile()" id="changePro1"><a href = "#">Perfil</a></li>
           </ul>
         </nav>
       </div>
@@ -131,21 +134,24 @@
 
       <div id ="submainBar">
         <div onclick="backMain()" id="logoBlue">
-          <img src = "images/blueLogo.png"  width="70px" height="70px" >
+          <img src = "images/blueLogo.png"  width="70px" height="70px">
+
         </div>
         <div id="logonameBlue">
-          <h2 onclick="backMain()">DISCOVER</h2>
+          <h2 onclick="backMain()"><a href = "#">DISCOVER</h2>
         </div>
 
 
         <div id="menuMainBlue">
-          <img src = "images/natalieDormer.jpg" width="40px" height="40px">
+          <img src = "images/registrarseWhite.png" onclick="registerPage()" id="registerICONWHITE">
+           <img src = "images/natalieDormer.jpg" width="70px" height="70px" onclick="profile()" id="userICONWHITE">
           <nav class="menuBlue">
             <ul>
               <li onclick="hoteles()"><a href = "#">Hoteles</a></li>
               <li onclick="experiences()"><a href = "#">Experiencias</a></li>
-              <li><a href = "#">Ayuda</a></li>
-              <li><a href = "#">Iniciar Seccion</a></li>
+              <li onclick="help()"><a href = "#">Ayuda</a></li>
+              <li onclick="loginPage()" id="changeLog2"><a href = "#">Iniciar Seccion</a></li>
+              <li onclick="profile()" id="changePro2"><a href = "#">Perfil</a></li>
             </ul>
           </nav>
         </div>
@@ -208,7 +214,7 @@
            junto a las emblematicas torres Kio.
         </p>
 
-        <h4 onclick="hotelViaCastellana()">Mas Informacion</h4>
+        <h4 onclick="hotelViaCastellana()"><a href = "#">Mas Informacion</a></h4>
         <img src="images/share.jpg">
         <button onclick="addList1()">+</button>
       </div>
@@ -237,7 +243,7 @@
           metro de la esracion de metro Avenida de America.
         </p>
 
-        <h4 onclick="hotelNH()">Mas Informacion</h4>
+        <h4 onclick="hotelNH()"><a href = "#">Mas Informacion</a></h4>
         <img src="images/share.jpg">
         <button onclick="addList2()">+</button>
       </div>
@@ -246,7 +252,7 @@
 
 
       <div class="MasInformacion">
-        <h4 onclick="moreResult()">Mas Resultados</h4>
+        <h4 onclick="moreResult()"><a href = "#">Mas Resultados</a></h4>
       </div>
 
 
@@ -278,7 +284,7 @@
           zona en la que conoceras los rincones mas asombrosos de la ciudad.
         </p>
 
-        <h4 onclick="Tour()">Mas Informacion</h4>
+        <h4 onclick="Tour()"><a href = "#">Mas Informacion</a></h4>
         <img src="images/share.jpg">
         <button onclick="addList1()">+</button>
       </div>
@@ -307,14 +313,14 @@
           que podras ver muchas especies de peces distintas y conocer un poco la vida marina de la zona.
         </p>
 
-        <h4 onclick="Bucea()">Mas Informacion</h4>
+        <h4 onclick="Bucea()"><a href = "#">Mas Informacion</a></h4>
         <img src="images/share.jpg">
         <button onclick="addList2()">+</button>
       </div>
 
 
       <div class="MasInformacion">
-        <h4 onclick="moreResult()">Mas Resultados</h4>
+        <h4 onclick="moreResult()"><a href = "#">Mas Resultados</a></h4>
       </div>
 
 
@@ -351,7 +357,7 @@
           <div class="keywordIMG">
             <p>Recomendado</p>
           </div>
-            <h4 onclick="hotelViaCastellana()" class="seeMoreInfo">Ver mas informacion</h4>
+            <h4 onclick="hotelViaCastellana()" class="seeMoreInfo"><a href = "#">Ver mas Informacion</a></h4>
         </div>
 
 
@@ -372,7 +378,7 @@
         <div class="keywordIMG">
               <p>Ecologico</p>
         </div>
-          <h4 onclick="Hideout()" class="seeMoreInfo">Ver mas informacion</h4>
+          <h4 onclick="Hideout()" class="seeMoreInfo"><a href = "#">Ver mas Informacion</a></h4>
       </div>
 
 
@@ -390,7 +396,7 @@
         <div class="keywordIMG">
               <p>Alternativo</p>
         </div>
-          <h4 onclick="Villa()" class="seeMoreInfo">Ver mas informacion</h4>
+          <h4 onclick="Villa()" class="seeMoreInfo"><a href = "#">Ver mas Informacion</a></h4>
       </div>
 
     </div>  <!-- End optionSummer -->
@@ -482,7 +488,7 @@
           </div>
 
           <div class="buttonBlue">
-            <p onclick="addOpinion()">Añadir Opinion</p>
+            <p onclick="addOpinion()"><a href ="#">Añadir Opinion</a></p>
           </div>
 
           <div id="map">
@@ -493,9 +499,181 @@
 
 
 
-      </div>
+      </div>  <!-- end detailInfoHotelsBox -->
+      
 
+      <div id="ayuda">
+        <div class="ayudaDad">
+           <h1 class= "bgGrey">Ayuda! Necesito modificar o cancelar mi reserva!</h1>
+          <hr>
+          <h2 class="ayudaChilds">
+            Si reservaste tu viaje en la WEB de DISCOVER con uno de nuestros proveedores, puedes acudir a Reservas para pedir mas informacion 
+            sobre el servicio de atencion al cliente disponible las 24 horas. Si reservaste tu viaje fuera de DISCOVER o se te redirigio a la pagina
+            del proveedor para completar la reserva, entonces debes contactar directamente con este ultimo. No recuerdas con que empresa
+            reservaste? Comprueba el carga realizado a tu tarjeta de credito.
+          </h2>
+        </div>
+
+        <div class="ayudaDad">
+           <h1 class= "bgGrey">Como creo yo una alerta de precios?</h1>
+          <hr>
+          <h2 class="ayudaChilds">
+            Muy sencillo, una vez registrado con tu cuenta si añades un hotel a una lista recibirás notificaciones en tu correo asociado si el precio de este baja. De esta forma podrás enterarte de cuando es el mejor momento para reservar.
+          </h2>
+        </div>
+
+
+        <div class="ayudaDad">
+           <h1 class= "bgGrey">En que se base la categoria dada a cada hotel?</h1>
+          <hr>
+          <h2 class="ayudaChilds">
+            La categoría de cada hotel se basa en diferentes criterios como la ubicación de este, la descripción del hotel por el propio equipo que lo forma y la opinión de los clientes, todo ello siempre cerciorandonos de que es información legítima
+          </h2>
+        </div>
+
+        <div class="ayudaDad">
+           <h1 class= "bgGrey">Como se que las opiniones de un hotel son legitimas?</h1>
+          <hr>
+          <h2 class="ayudaChilds">
+            Todas las opiniones de los usuarios son revisadas diariamente por un equipo directamente dedicado a ello, cualquier opinión sospechosa por dudosa credibilidad es quitada de la página hasta que finalmente se verifica si es verdad o no
+          </h2>
+        </div>
+        
+
+        </div>
+      </div>  <!-- ayuda -->
+
+
+
+      <div id="perfil">
+        <img id="profileImage" src = "images/natalieDormer.jpg" width="250px" height="250px">
+        <p id="nameProfile">name</p>
+        <p  id="editInfo"><a href = "#">Editar informacion Personal</a></p>
+        <div id="summer">
+        <div class="letter">
+          <h3>Opciones para verano</h3>
+          <p>Lista colaborativa</p>
+        </div>
+       
       </div>
+      <div id="colaborator">
+        <h3>Colaboradores</h3>
+        <img src = "images/ramiMalek.jpg" width="60px" height="60px">
+        <img src = "images/natalieDormer.jpg" width="60px" height="60px">
+      </div>
+      
+       <h4 id="morelist" class = "masSummer" onclick="optionSummer()"><a href = "#">Ver Lista Completa</a></h4>
+        <div>
+          <h4 id="completeList" class = "masSummer" onclick="optionSummer()"><a href = "#">Ver todas las Listas</a></h4>
+        </div>
+
+
+      </div>  <!-- end perfil -->
+      
+
+      </div>  <!-- end subMain -->
+
+
+
+        <div id="registerPage">
+          <div id="logoRegister">
+            <img src = "images/whiteLogo.png" width="110px" height="90px">
+          </div>
+          <div id="logonameRegister">
+            <h2>DISCOVER</h2>
+          </div>
+
+             <div id = "registerBox">
+              <h3>Registrete y comienza a disfrutar ya!</h3>
+              <div id = "rBox">
+                <form onsubmit="registerForm(); return false">
+                  <label>Nombre y apellido</label>
+                  <div id="div1">
+                    <input type="text" value="" name="name" id="name"required>
+                  </div>
+
+                  <div class="left">
+                    <label>Correo</label>
+                  </div>
+                  <div class="right">
+                    <label>Nombre de Usuario</label>
+                  </div>
+                  <div class="left">
+                    <input type="text" value="" name="email" id = "email" required>
+                  </div>
+                  <div class="right">
+                    <input type="text" value="" name="username" id="username" required>
+                  </div>
+
+                  <div class="left">
+                    <label>DNI</label>
+                  </div>
+                  <div class="right">
+                    <label>Contraseña</label>
+                  </div>
+                  <div class="left">
+                    <input type="text" value="" name="dni" id="dni" required>
+                  </div>
+                  <div class="right">
+                    <input type="password" value="" name="password" id="password" required>
+                  </div>
+
+                  <div class="left">
+                    <label>Fecha de Nacimiento</label>
+                  </div>
+                  <div class="right">
+                    <label>Lugar de nacimiento</label>
+                  </div>
+                  <div class="left">
+                    <input type="text" value="" name="birthdate" id = "birthdate" required>
+                  </div>
+                  <div class="right">
+                    <input type="text" value="" name="country" id="country" required>
+                  </div>
+
+
+
+                  <div id="Submit">
+                      <input type ="submit" value="Registrarse">
+                  </div>
+                </form>
+
+              </div>
+            </div>
+         
+        </div>
+
+
+         <div id="loginPage">
+          <div id="logoLogin">
+            <img src = "images/whiteLogo.png" width="110px" height="90px">
+          </div>
+          <div id="logonameLogin">
+            <h2>DISCOVER</h2>
+          </div>
+
+             <div id = "loginBox">
+              <h3>Disfruta de miles de experiencias!</h3>
+              <div id = "lBox">
+                <form onsubmit="loginForm(); return false">
+                  <label>Nombre de Usuario</label>
+                  <div id="div1">
+                    <input type="text" value="" name= "nameLogin" id="nameLogin"required>
+                  </div>
+                  <label>Contraseña</label>
+                  <div id="div1">
+                    <input type="password" value="" name="passwordLogin" id="passwordLogin"required>
+                  </div>
+                  <p id="forget">¿Has olvidado tu contraseña?</p>
+                  <div id="Submit">
+                      <input type ="submit" value="Iniciar Sesion">
+                  </div>
+                </form>
+
+              </div>
+            </div>
+        </div>
+
 
 
   </body>

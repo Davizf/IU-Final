@@ -18,6 +18,8 @@ function hoteles(){
     document.getElementById("gallery").style.display="none";
     document.getElementById("writeOpinionBox").style.display="none";
     document.getElementById("detailInfoHotelsBox").style.display="none";
+    document.getElementById("ayuda").style.display="none";
+    document.getElementById("perfil").style.display="none";
 };
 function addList1(){
   document.getElementById("añadirLista2").style.display="none";
@@ -45,6 +47,8 @@ function experiences(){
   document.getElementById("gallery").style.display="none";
   document.getElementById("writeOpinionBox").style.display="none";
   document.getElementById("detailInfoHotelsBox").style.display="none";
+  document.getElementById("ayuda").style.display="none";
+  document.getElementById("perfil").style.display="none";
 }
 
 function searchForm(){
@@ -67,6 +71,7 @@ function searchForm(){
   document.getElementById("place").innerHTML = "En " + lugar.value.bold();
   document.getElementById("date").innerHTML = "Desde el " + partida.value.bold() + " hasta el " + llegada.value.bold();
   document.getElementById("person").innerHTML = "Para " + personas.value.bold() + " personas";
+  document.getElementById("ayuda").style.display="none";
 };
 
 function backMain(){
@@ -180,4 +185,110 @@ function moreResult(){
   document.getElementById("optionSummer").style.display="block";
   document.getElementById("infoHotels").style.display="none";
   document.getElementById("infoExperiences").style.display="none";
-}
+};
+function registerPage(){
+  document.getElementById("main").style.display="none";
+  document.getElementById("subMain").style.display="none";
+  document.getElementById("registerPage").style.display="block";
+};
+
+function loginPage(){
+  document.getElementById("main").style.display="none";
+  document.getElementById("subMain").style.display="none";
+  document.getElementById("loginPage").style.display="block";
+};
+
+function help(){
+  document.getElementById("ayuda").style.display="block";
+  document.getElementById("main").style.display="none";
+  document.getElementById("subMain").style.display="block";
+  document.getElementById("submainBar").style.display="block";
+  document.getElementById("searchBar").style.display="none";
+  document.getElementById("separated").style.display="block";
+  document.getElementById("infoHotels").style.display="none";
+  document.getElementById("infoExperiences").style.display="none";
+  document.getElementById("detailInfoHotelsBox").style.display="none";
+  document.getElementById("optionSummer").style.display="none";
+  document.getElementById("gallery").style.display="none";
+  document.getElementById("addOpinion").style.display="none";
+  document.getElementById("perfil").style.display="none";
+};
+
+function registerForm(){
+  var username = document.getElementById("username");
+
+  if(username.value == getCookieByName("username")){
+    alert("Ya existe una cuenta asociada a este nombre de usuario.");
+  }else{
+    alert("Cuenta creada");
+    document.cookie= username.name + "=" + username.value;
+
+    var name = document.getElementById("name");
+    document.cookie= name.name + "=" + name.value;
+    var email = document.getElementById("email");
+    document.cookie= email.name + "=" + email.value;
+  
+    var dni = document.getElementById("dni");
+    document.cookie= dni.name + "=" + dni.value;
+
+    var password = document.getElementById("password");
+    document.cookie= password.name + "=" + password.value;
+
+    var birthdate = document.getElementById("birthdate");
+    document.cookie= birthdate.name + "=" + birthdate.value;
+    var country = document.getElementById("country");
+    document.cookie= country.name + "=" + country.value;
+  }
+};
+
+function getCookieByName(name) {
+  var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+  return v ? v[2] : null;
+};
+
+
+function loginForm(){
+  var nameLogin = document.getElementById("nameLogin");
+  var passwordLogin = document.getElementById("passwordLogin");
+  if(nameLogin.value != getCookieByName("name")){
+    alert("La cuenta no esta registrada!");
+  }else{
+    if(passwordLogin.value != getCookieByName("password")){
+      alert("Contraseña Incorrecta!");
+    }else{
+      alert("Ingresando...");
+     
+     
+      document.getElementById("main").style.display="block";
+      document.getElementById("subMain").style.display="none";
+      document.getElementById("loginPage").style.display="none";
+      document.getElementById("registerICON").style.display= "none";
+      document.getElementById("userICONBLUE").style.display= "block";
+      document.getElementById("registerICONWHITE").style.display= "none";
+      document.getElementById("userICONWHITE").style.display= "block";
+      document.getElementById("ayuda").style.display= "none";
+      document.getElementById("changeLog1").style.display= "none";
+      document.getElementById("changeLog2").style.display= "none";
+      document.getElementById("changePro1").style.display= "block";
+      document.getElementById("changePro2").style.display= "block";
+
+      
+      document.getElementById("nameProfile").innerHTML = getCookieByName("name");
+
+    
+    }
+  }
+};
+
+function profile(){
+  document.getElementById("main").style.display="none";
+  document.getElementById("detailInfoHotelsBox").style.display="none";
+  document.getElementById("infoExperiences").style.display="none";
+  document.getElementById("infoHotels").style.display="none";
+  document.getElementById("ayuda").style.display="none";
+  document.getElementById("subMain").style.display="block";
+  document.getElementById("submainBar").style.display="block";
+  document.getElementById("perfil").style.display="block";
+  document.getElementById("keyTitleExperience").style.display="block";
+  document.getElementById("keyTitleHotel").style.display="block";
+};
