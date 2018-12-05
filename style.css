@@ -87,7 +87,7 @@
   margin-bottom: 10px;
 }
 
-#div1 input{
+.div1 input{
   width: 100%;
 }
 
@@ -117,7 +117,25 @@
 #div4 input{
   width: 50%;
 }
-#Submit input{
+#Submit1 input[type=submit]{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #FFFFFF;
+  font-size: 18px;
+  background-color: #687FEA;
+  width: 100%;
+}
+
+#Submit2 input[type=submit]{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #FFFFFF;
+  font-size: 18px;
+  background-color: #687FEA;
+  width: 100%;
+}
+
+#Submit3 input[type=submit]{
   padding-top: 2%;
   padding-bottom: 2%;
   color: #FFFFFF;
@@ -425,7 +443,7 @@
   text-decoration: none;
   color: #FFFFFF;
 }
-#hotelViaCastellana{
+#hotelViaCastellana2{
   border-radius: 10px;
   background-image: url("images/hotelViaCastellana.jpg");
   width: 95%;
@@ -484,6 +502,7 @@
 }
 
 #optionSummer{
+  clear: both;
   display: none;
 }
 
@@ -823,14 +842,7 @@
   margin-bottom: 10px;
 }
 
-#Submit input{
-  padding-top: 2%;
-  padding-bottom: 2%;
-  color: #FFFFFF;
-  font-size: 18px;
-  background-color: #687FEA;
-  width: 100%;
-}
+
 
 /* login Page*/
 
@@ -890,14 +902,6 @@
   margin-bottom: 10px;
 }
 
-#Submit input{
-  padding-top: 2%;
-  padding-bottom: 2%;
-  color: #FFFFFF;
-  font-size: 18px;
-  background-color: #687FEA;
-  width: 100%;
-}
 
 #forget{
   color: #687FEA;
@@ -933,7 +937,7 @@
 }
 
 #userICONBLUE{
-  margin-top: -10px; 
+  margin-top: -10px;
   display: none;
 }
 

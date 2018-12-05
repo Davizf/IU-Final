@@ -182,8 +182,10 @@ function addOpinion(){
 };
 
 function moreResult(){
+  document.getElementById("perfil").style.display="none";
   document.getElementById("optionSummer").style.display="block";
   document.getElementById("infoHotels").style.display="none";
+  document.getElementById("separated").style.display="block";
   document.getElementById("infoExperiences").style.display="none";
 };
 function registerPage(){
@@ -199,6 +201,8 @@ function loginPage(){
 };
 
 function help(){
+  document.getElementById("writeOpinionBox").style.display="none";
+  document.getElementById("perfil").style.display="none";
   document.getElementById("ayuda").style.display="block";
   document.getElementById("main").style.display="none";
   document.getElementById("subMain").style.display="block";
@@ -211,7 +215,8 @@ function help(){
   document.getElementById("optionSummer").style.display="none";
   document.getElementById("gallery").style.display="none";
   document.getElementById("addOpinion").style.display="none";
-  document.getElementById("perfil").style.display="none";
+
+
 };
 
 function registerForm(){
@@ -227,7 +232,7 @@ function registerForm(){
     document.cookie= name.name + "=" + name.value;
     var email = document.getElementById("email");
     document.cookie= email.name + "=" + email.value;
-  
+
     var dni = document.getElementById("dni");
     document.cookie= dni.name + "=" + dni.value;
 
@@ -257,8 +262,8 @@ function loginForm(){
       alert("Contraseña Incorrecta!");
     }else{
       alert("Ingresando...");
-     
-     
+
+
       document.getElementById("main").style.display="block";
       document.getElementById("subMain").style.display="none";
       document.getElementById("loginPage").style.display="none";
@@ -272,16 +277,21 @@ function loginForm(){
       document.getElementById("changePro1").style.display= "block";
       document.getElementById("changePro2").style.display= "block";
 
-      
+
       document.getElementById("nameProfile").innerHTML = getCookieByName("name");
 
-    
+
     }
   }
 };
 
 function profile(){
   document.getElementById("main").style.display="none";
+  document.getElementById("gallery").style.display="none";
+  document.getElementById("keyTitleExperience").style.display="none";
+  document.getElementById("keyTitleHotel").style.display="none";
+  document.getElementById("writeOpinionBox").style.display="none";
+  document.getElementById("optionSummer").style.display="none";
   document.getElementById("detailInfoHotelsBox").style.display="none";
   document.getElementById("infoExperiences").style.display="none";
   document.getElementById("infoHotels").style.display="none";
@@ -289,6 +299,4 @@ function profile(){
   document.getElementById("subMain").style.display="block";
   document.getElementById("submainBar").style.display="block";
   document.getElementById("perfil").style.display="block";
-  document.getElementById("keyTitleExperience").style.display="block";
-  document.getElementById("keyTitleHotel").style.display="block";
 };
