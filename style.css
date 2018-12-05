@@ -1026,3 +1026,13 @@
   clear: both;
   display: none;
 }
+
+#logonameRegister a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#logonameLogin a{
+  text-decoration: none;
+  color: #FFFFFF;
+}

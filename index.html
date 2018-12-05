@@ -12,25 +12,12 @@
     <script type="text/javascript">
     		$(document).ready(function(){
 
-    			//设置config, 必需的参数为lbId, 其他参数可选, ./js/sslide.js文件最前面有config参数详细说明.
-    			//如果没有传入图片路径数组，会默认读取./css/images目录下的slb1.png 到 slb5.png 的5张图片,
-    			//最简单的添加轮播的方式是直接覆盖这几张图片。
-
     			var info1 = {
     				"lbId": "myslide_1",
     				"picWidth": 470,
     				"picHeight": 650,
-    				//"interTime": 2500,
-    				//"switchBtnShow": false,
-    				//"switchDotShow": false
-    				//"autoSlide": false,
-    				//"pause": false,
-    				//"loop": false,
-    				//"picNum": 5,
     				"picPath": ["images/slb1.png","images/slb2.png","images/slb3.png","images/slb4.png"]
     			};
-
-
 
     			SSlide(info1);
 
@@ -580,7 +567,7 @@
             <img src = "images/whiteLogo.png" alt="" width="110" height="90">
           </div>
           <div id="logonameRegister">
-            <h2>DISCOVER</h2>
+            <h2 onclick="backMain()"><a href = "#">DISCOVER</a></h2>
           </div>
 
              <div id = "registerBox">
@@ -649,7 +636,7 @@
             <img src = "images/whiteLogo.png" alt="" width="110" height="90">
           </div>
           <div id="logonameLogin">
-            <h2>DISCOVER</h2>
+            <h2 onclick="backMain()"><a href = "#">DISCOVER</a></h2>
           </div>
 
              <div id = "loginBox">
