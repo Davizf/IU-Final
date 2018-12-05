@@ -77,6 +77,7 @@ function searchForm(){
 function backMain(){
   document.getElementById("main").style.display="block";
   document.getElementById("subMain").style.display="none";
+  document.getElementById("registerPage").style.display="none";
 };
 
 function hotelViaCastellana(){
