@@ -76,6 +76,9 @@ function searchForm(){
   document.getElementById("date").innerHTML = "Desde el " + partida.value.bold() + " hasta el " + llegada.value.bold();
   document.getElementById("person").innerHTML = "Para " + personas.value.bold() + " personas";
   document.getElementById("ayuda").style.display="none";
+  document.getElementById("detailInfoHotelsBox").style.display="none";
+    document.getElementById("gallery").style.display="none";
+      document.getElementById("writeOpinionBox").style.display="none";
 };
 
 function backMain(){
