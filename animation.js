@@ -20,6 +20,8 @@ function hoteles(){
     document.getElementById("detailInfoHotelsBox").style.display="none";
     document.getElementById("ayuda").style.display="none";
     document.getElementById("perfil").style.display="none";
+    document.getElementById("registerPage").style.display="none";
+    document.getElementById("loginPage").style.display="none";
 };
 function addList1(){
   document.getElementById("añadirLista2").style.display="none";
@@ -49,6 +51,8 @@ function experiences(){
   document.getElementById("detailInfoHotelsBox").style.display="none";
   document.getElementById("ayuda").style.display="none";
   document.getElementById("perfil").style.display="none";
+  document.getElementById("registerPage").style.display="none";
+  document.getElementById("loginPage").style.display="none";
 }
 
 function searchForm(){
