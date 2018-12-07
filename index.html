@@ -9,6 +9,8 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="animation.js"></script>
     <script type="text/javascript" src="sslide.js"></script>
+
+    <!-- iniciar el plugin de la galeria rotaria -->
     <script type="text/javascript">
     		$(document).ready(function(){
 
@@ -26,6 +28,7 @@
   </head>
   <body>
 
+    <!-- pagina principal -->
     <div id ="main">
       <div id="logo">
         <img src = "images/whiteLogo.png" alt="" width="70" height="60">
@@ -34,7 +37,7 @@
         <h2>DISCOVER</h2>
       </div>
 
-
+      <!-- menu de la pagina principal -->
       <div id="menuMain">
         <img src = "images/register.png" alt="" onclick="registerPage()" id="registerICON">
         <img src = "images/natalieDormerBlue.jpg" alt="" width="70" height="70" onclick="profile()" id="userICONBLUE">
@@ -49,12 +52,13 @@
         </nav>
       </div>
 
-
+      <!-- iconos de tiendas de software -->
       <div id="softwareStore">
         <img src = "images/googlePlay.jpg" alt="" width="120" height="40">
         <img src = "images/appleStore.jpg" alt="" width="120" height="40">
       </div>
 
+      <!-- la tabla de busqueda de la pagina principal -->
       <div id = "searchBox">
         <h2>Busca hoteles y experiencias fantasticas</h2>
         <div id = "sBox">
@@ -105,6 +109,7 @@
         </div>
       </div>
 
+      <!-- cookies la pagina principal -->
       <div id = "politicaCookies">
         <p>Nuestra web usa cookies con fines tecnicos, analiticos y de marketing. Si estas de acuerdo, continua con tu busqueda</p>
         <img onclick="acceptCookies()" alt="" src = "images/Acepto.jpg" width="150" height="50" >
@@ -116,9 +121,9 @@
 
     <!--- End main  ----------------------------------------------------------------------------------------------->
 
-
+    <!-- la pagina secundaria -->
     <div id ="subMain">
-
+      <!-- logo de la pagina secundaria -->
       <div id ="submainBar">
         <div onclick="backMain()" id="logoBlue">
           <img src = "images/blueLogo.png" alt="" width="70" height="70">
@@ -128,7 +133,7 @@
           <h2 onclick="backMain()"><a href = "#">DISCOVER</a></h2>
         </div>
 
-
+        <!-- menu de la pagina secundaria -->
         <div id="menuMainBlue">
           <img src = "images/registrarseWhite.png" alt="" onclick="registerPage()" id="registerICONWHITE">
            <img src = "images/natalieDormer.jpg" alt="" width="70" height="70" onclick="profile()" id="userICONWHITE">
@@ -144,7 +149,7 @@
         </div>
       </div>
 
-
+      <!-- menu de busqueda -->
       <div id="searchBar">
 
         <div id="search">
@@ -175,10 +180,10 @@
 
     </div>
 
-
+    <!-- linea separadora la pagina secundaria -->
       <hr id="separated">
 
-
+      <!-- informacion de hoteles la pagina secundaria -->
     <div id="infoHotels">
       <div id="hotelViaCastellana">
         <div class="letter">
@@ -247,7 +252,7 @@
     </div>  <!-- end infoHotels -->
 
 
-
+    <!-- informacion de experiencias la pagina secundaria -->
     <div id="infoExperiences">
 
       <div id="Tour">
@@ -392,7 +397,7 @@
 
 
 
-
+    <!--la caja de opinion la pagina secundaria -->
     <div id="writeOpinionBox">
       <form onsubmit="opinionForm(); return false">
         <label>Tiempo de Estancia</label>
@@ -433,7 +438,7 @@
 
 
 
-
+    <!-- la caja de detalles de un hotel de la pagina secundaria -->
       <div id="detailInfoHotelsBox">
           <h2 id="var1">Hotel Via Castellana</h2>
           <button>+</button>
@@ -461,7 +466,7 @@
 
 
 
-
+          <!-- comentarios de la caja de detalles de hoteles -->
           <div id="commits1">
             <img src="images/natalieDormer.jpg" alt="" width="70" height="70">
             <h4>Natalie Dormer</h4>
@@ -488,7 +493,7 @@
 
       </div>  <!-- end detailInfoHotelsBox -->
 
-
+      <!-- sesion de ayuda-->
       <div id="ayuda">
         <div class="ayudaDad">
            <h1 class= "bgGrey">Ayuda! Necesito modificar o cancelar mi reserva!</h1>
@@ -531,7 +536,7 @@
 
 
 
-
+        <!-- sesion de perfil -->
       <div id="perfil">
         <img id="profileImage" alt="" src = "images/natalieDormer.jpg" width="250" height="250">
         <p id="nameProfile">name</p>
@@ -561,7 +566,7 @@
       </div>  <!-- end subMain -->
 
 
-
+      <!-- sesion de la pagina de registro-->
         <div id="registerPage">
           <div id="logoRegister">
             <img src = "images/whiteLogo.png" alt="" width="110" height="90">
@@ -630,7 +635,7 @@
 
         </div>
 
-
+        <!-- sesion de la pagina de ingresar -->
          <div id="loginPage">
           <div id="logoLogin">
             <img src = "images/whiteLogo.png" alt="" width="110" height="90">
