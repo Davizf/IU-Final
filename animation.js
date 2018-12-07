@@ -192,6 +192,8 @@ function moreResult(){
   document.getElementById("infoHotels").style.display="none";
   document.getElementById("separated").style.display="block";
   document.getElementById("infoExperiences").style.display="none";
+  document.getElementById("añadirLista1").style.display="none";
+  document.getElementById("añadirLista2").style.display="none";
 };
 function registerPage(){
   document.getElementById("main").style.display="none";
@@ -260,7 +262,7 @@ function getCookieByName(name) {
 function loginForm(){
   var nameLogin = document.getElementById("nameLogin");
   var passwordLogin = document.getElementById("passwordLogin");
-  if(nameLogin.value != getCookieByName("name")){
+  if(nameLogin.value != getCookieByName("username")){
     alert("La cuenta no esta registrada!");
   }else{
     if(passwordLogin.value != getCookieByName("password")){
